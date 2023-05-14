@@ -4,7 +4,13 @@
         <title>Hi</title>
         <script>
             function hi() {
-                alert('Hi, world!');
+                const heading= document.querySelector('h1');
+                if (heading.innerHTML==='Hi!') {
+                    heading.innerHTML='Goodbye!';
+                } else {
+                    heading.innerHTML='Hi!';
+                }
+                
             }
         </script>
     </head>
